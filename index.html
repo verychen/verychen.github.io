@@ -65,11 +65,11 @@
       
         <a class="main-nav-link" href="/">Home</a>
       
-        <a class="main-nav-link" href="https://verychen.github.io/plan">PLAN</a>
+        <a class="main-nav-link" href="/plan">PLAN</a>
       
-        <a class="main-nav-link" href="https://verychen.github.io/archives">Archives</a>
+        <a class="main-nav-link" href="/archives">Archives</a>
       
-        <a class="main-nav-link" href="https://verychen.github.io/about">About</a>
+        <a class="main-nav-link" href="/about">About</a>
       
       <a class="main-nav-link st-search-show-outputs">Search</a>
     </nav>
@@ -79,10 +79,10 @@
     <div class="outer">
       <section id="main">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Android Studio体验" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <h3 href="/2018/03/04/hello-world/" class="article-date">
-  <time datetime="2018-03-04T03:17:59.086Z" itemprop="datePublished">2018-03-04</time>
+    <h3 href="/2019/10/21/Android Studio体验/" class="article-date">
+  <time datetime="2019-10-20T17:40:23.762Z" itemprop="datePublished">2019-10-21</time>
 </h3>
     
   </div>
@@ -91,35 +91,484 @@
   <div class="fill-content">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
         
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>@2015-08-09 22:21:49<br>android studio安装<br>1 安装jdk1.8<br>安装目录：<br>C:\Program Files\Java\jdk1.8.0_51\<br>设置JAVA系统环境变量<br>1 JAVA_HOME C:\Program Files\Java\jdk1.8.0_51\<br>2 CLASSPATH：.;%JAVA_HOME%/lib/tools.jar;%JAVA_HOME%/lib/dt.jar<br>3 path目录首部添加：;%JAVA_HOME%/bin;</p>
+<p>ps:注意安装和系统对应的版本；</p>
+<p>安装<br>1 没有更新sdk导致无法进入android studio</p>
+<p>问题解决：<br>如果是第一安装完之后出现这个界面，在这个目录下<br>C:\Program Files\Android\Android Studio\bin\idea.properties</p>
+<p>#———————————————————————<br>idea.xdebug.key=-Xdebug</p>
+<p>#———————————————————————–</p>
+<h1 id="Change-to-‘enabled’-if-you-want-to-receive-instant-visual-notifications"><a href="#Change-to-‘enabled’-if-you-want-to-receive-instant-visual-notifications" class="headerlink" title="Change to ‘enabled’ if you want to receive instant visual notifications"></a>Change to ‘enabled’ if you want to receive instant visual notifications</h1><h1 id="about-fatal-errors-that-happen-to-an-IDE-or-plugins-installed"><a href="#about-fatal-errors-that-happen-to-an-IDE-or-plugins-installed" class="headerlink" title="about fatal errors that happen to an IDE or plugins installed."></a>about fatal errors that happen to an IDE or plugins installed.</h1><p>#———————————————————————–<br>idea.fatal.error.notification=disabled</p>
+<p>#第一次打开报错<br>disable.android.first.run=true<br>2 更新android SDK报错<br>C:\Windows\System32\drivers\etc\host；<br>无法连接到Ａｎｄｒｏｉｄ的网络，我修改了ｈｏｓｔｓ文件，添加了如下内容：</p>
+<p>#Google主页<br>203.208.46.146 <a href="http://www.google.com" target="_blank" rel="noopener">www.google.com</a></p>
+<p>#这行是为了方便打开Android开发官网 现在好像不VPN也可以打开<br>74.125.113.121 developer.android.com</p>
+<p>#更新的内容从以下地址下载<br>203.208.46.146 dl.google.com<br>203.208.46.146 dl-ssl.google.com<br>203.208.46.146 groups.google.com<br>203.208.46.146 appengine.google.com<br>无法下载，最终还是使用自由门翻墙更新成功了<br>但是目前还有很多的sdk无法下载，下载sdk时报错：<br>Fetching URL: <a href="https://dl.google.com/android/repository/sys-img/android-tv/sys-img.xml" target="_blank" rel="noopener">https://dl.google.com/android/repository/sys-img/android-tv/sys-img.xml</a><br>Failed to fetch URL <a href="https://dl.google.com/android/repository/sys-img/android-tv/sys-img.xml" target="_blank" rel="noopener">https://dl.google.com/android/repository/sys-img/android-tv/sys-img.xml</a>, reason: HttpHostConnect Connection to <a href="http://cache.mrt.ac.lk:3128" target="_blank" rel="noopener">http://cache.mrt.ac.lk:3128</a> refused<br>Fetching URL: <a href="https://dl.google.com/android/repository/sys-img/google_apis/sys-img.xml" target="_blank" rel="noopener">https://dl.google.com/android/repository/sys-img/google_apis/sys-img.xml</a><br>Failed to fetch URL <a href="https://dl.google.com/android/repository/sys-img/google_apis/sys-img.xml" target="_blank" rel="noopener">https://dl.google.com/android/repository/sys-img/google_apis/sys-img.xml</a>, reason: HttpHostConnect Connection to <a href="http://cache.mrt.ac.lk:3128" target="_blank" rel="noopener">http://cache.mrt.ac.lk:3128</a> refused<br>Fetching URL: <a href="https://dl.google.com/android/repository/sys-img/x86/addon-x86.xml" target="_blank" rel="noopener">https://dl.google.com/android/repository/sys-img/x86/addon-x86.xml</a><br>Failed to fetch URL <a href="https://dl.google.com/android/repository/sys-img/x86/addon-x86.xml/addon.xml" target="_blank" rel="noopener">https://dl.google.com/android/repository/sys-img/x86/addon-x86.xml/addon.xml</a>, reason: HttpHostConnect Connection to <a href="http://cache.mrt.ac.lk:3128" target="_blank" rel="noopener">http://cache.mrt.ac.lk:3128</a> refused<br>待解决？？？<br>3 创建模拟器时报错<br>emulator: ERROR: x86 emulation currently requires hardware acceleration!<br>Please ensure Intel HAXM is properly installed and usable.<br>CPU acceleration status: HAX kernel module is not installed!<br>参考：<br><a href="http://www.cnblogs.com/csulennon/p/4178404.html" target="_blank" rel="noopener">http://www.cnblogs.com/csulennon/p/4178404.html</a></p>
+<p>参考<br>新手指南：<a href="http://mobile.51cto.com/abased-443518_all.htm" target="_blank" rel="noopener">http://mobile.51cto.com/abased-443518_all.htm</a><br>导出apk：<a href="http://blog.csdn.net/sunylat/article/details/9239595" target="_blank" rel="noopener">http://blog.csdn.net/sunylat/article/details/9239595</a></p>
+<p>来自为知笔记(Wiz)</p>
 
       
     </div>
     <footer class="article-footer">
       <div class="article-footer-content">
         
-        <a data-url="http://yoursite.com/2018/03/04/hello-world/" data-id="cjh4wtqau00010kvz8tdui3yw" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2019/10/21/Android Studio体验/" data-id="ck1za27tk00001wvzuco1bgb2" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-月明" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/10/21/月明/" class="article-date">
+  <time datetime="2019-10-20T17:39:39.914Z" itemprop="datePublished">2019-10-21</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>@2009-12-01 20:14:56<br>今天的月亮开始圆起来了，从宿舍到实验室的路上，突然莫名地想念家乡。也许在现在的生活给自己太多的压力，也许是自己的目标和动力早就丢在那岁月的长河里，也许是突然对自己的未来感到迷茫，我突然想家了。依稀记得曾经从来不想家的，从来不打电话回家和父母联系，哪怕是有什么重要的事情也决不想打电话回家。可是现在每个星期的电话肯定不能少，哪怕是没有什么事也会打个电话回家。</p>
+<pre><code> 突然就很想家，这种感觉没有任何征兆的就从心里某个地方滋生出来，进而无法遏制。做事也没有任何心情，心中总有一股烦躁存在。自从上个星期开始就是这种情况，突然感觉没事做了，没目标了，不知道上研到底是为了什么，难道是躲避工作吗。一直在为自己的逃避找借口，总是不想去面对和解决。
+
+ 还记得家里的床，到了家里就感觉自己整个人放松下来了，感觉外面的一切和自己再也没有任何关系了，家给了我们庇护和保护。可是，突然意识到家给我们保护的时间是不是太长一点了，是不是应该我们为这个家负上责任？
+
+不去谈现在工作的人的情况，我只是在心里想想，在心里想想故乡的月也是这样的圆，故乡的父母是否也会注意到月圆？当然不会，他们怎么会去我们这样的闲情雅致去探月品心，他们的心中最多也就算算日子，想想自己的儿女，我们可以通过很多方法忘忧，而他们紧紧只是想想自己的儿女。。。
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2019/10/21/月明/" data-id="ck1za27u900091wvz29f15xnx" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-【转】“天道酬勤，厚德载物”说略" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/10/21/【转】“天道酬勤，厚德载物”说略/" class="article-date">
+  <time datetime="2019-10-20T17:39:08.153Z" itemprop="datePublished">2019-10-21</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>@2009-11-16 10:54:11<br>天道酬勤：有人说语出《老子》，实际上《老子》并无此说，该是古训。天道酬勤，应证了那句“有志者,事竟成,苦心人,天不负。”只要你付出了努力，命运就会垂青于你。相信功夫不负有心人的真理，不投机不取巧，踏踏实实做人做事，你一定会成功；只要耕耘,付出终有收获。没有人能只依靠天分成功。上帝给予了天分，勤奋将天分变为天才。曾国藩是中国历史上最有影响的人物之一，然他小时候的天赋却不高。有一天在家读书，对一篇文章重复不知道多少遍了，还在朗读，因为，他还没有背下来。这时候他家来了一个贼，潜伏在他的屋檐下，希望等读书人睡觉之后捞点好处。可是等啊等，就是不见他睡觉，还是翻来复去地读那篇文章。贼人大怒，跳出来说，“这种水平读什么书？”然后将那文章背诵一遍，扬长而去！ 贼人是很聪明，至少比曾先生要聪明，但是他只能成为贼，而曾先生却成为毛泽东主席都钦佩的人：“近代最有大本领的人。” “勤能补拙是良训，一分辛苦一分才。”那贼的记忆力真好，听过几遍的文章都能背下来，而且很勇敢，见别人不睡觉居然可以跳出来“大怒”，教训曾先生之后，还要背书，扬长而去。</p>
+<p>但是遗憾的是，他名不经传，曾先生后来启用了一大批人才，按说这位贼人与曾先生有一面之交，大可去施展一二，可惜，他的天赋没有加上勤奋，变得不知所终。</p>
+<p>　<br>自强不息 厚德载物——清华大学校训解释：来源于《周易》的两句话：一句是“天行健，君子以自强不息”（乾卦）；一句是“地势坤，君子以厚德载物”（坤卦）。民国时期，梁启超在清华大学任教时，曾给当时的清华学子作了《论君子》的演讲，他在演讲中希望清华学子们都能继承中华传统美德，并引用了《易经》上的“自强不息”“厚德载物”等话语来激励清华学子。此后，清华人便把“自强不息，厚德载物”8个字写进了清华校规，后来又逐渐演变成为清华校训。</p>
+<p>天体运行，刚健有力；君子处世，应像天一样，自我力求进步，永不停息。坤,地也,土也，易之卦。山岳河渎,皆坤之灵。——《宋书·乐志》。又如:坤元(坤的元始之德,指大地资生万物之德)。后用为女性或女方的代称。如:坤表(女表);坤鞋(女鞋);坤旦(评剧中女伶串演旦角,叫坤旦;男子串演旦角,叫乾旦);坤宅(旧时联姻,称女家为坤宅,男家为乾宅)。地势坤，由以上两义引申理解为大地气势厚实和顺。地势坤，君子以厚德载物：以深厚的德泽育人利物，今多用来指以崇高的道德、博大精深的学识培育学子成才。</p>
+<p>“天行健，君子以自强不息”“地势坤，君子以厚德载物”两句意谓：天（即自然）的运动刚强劲健，相应于此，君子处世，应像天一样，自我力求进步，刚毅坚卓，发愤图强，永不停息；大地的气势厚实和顺，君子应增厚美德，容载万物。译为：君子应该像天宇一样运行不息，即使颠沛流离，也不屈不挠；如果你是君子，接物度量要像大地一样，没有任何东西不能承载。</p>
+<p>著名哲学家、哲学史家、国学大师，北京大学哲学系教授张岱年先生把中华民族精神概括为“自强不息”“厚德载物”。作为“高山仰止，景行行止”的国学大师，他终生勤勉，致思学问，造福祖国的文化学术事业，堪称一代学人楷模。</p>
+<p>人世沉浮如电光石火，盛衰起伏，变幻难测。如果你有天才，勤奋则使你如虎添翼；如果你没有天才，勤奋将使你赢得一切。命运掌握在那些勤勤恳恳<br>工作的人手中。推动世界前进的人并不是那些严格意义上的天才，而是那些智力平平而又非常勤奋、埋头苦干的人；不是那些天资卓越、才华四射的天才，而是那些不论在哪一个行业都勤勤恳恳、劳作不息的人们。</p>
+<p>天赋超常而没有毅力和恒心的人只会成为转瞬即逝的火花。许多意志坚强、持之以恒而智力平平乃至稍稍迟钝的人都会超过那些只有天赋而没有毅力的人。懒惰是一种毒药，它既毒害人们的肉体，也毒害人们的心灵。无论多么美好<br>的东西，人们只有付出相应的劳动和汗水，才能懂得这美好的东西是多么的来之不易。</p>
+<p>真正的智慧总是与谦虚相连，真正的哲人必然像大海一样宽厚。浅薄的嫉恨和无知的轻蔑都是真正不尊重劳动、不尊重勤劳的表现。人们常说：播下行为的种子，你就会收割习惯；播下习惯的种子，你就会收割性格；播下性格的种子，你就会收割一定的命运。 “闻鸡起舞早耕耘，天道酬勤有志人。”让我们养成勤劳的习惯，培养勤奋的性格，收割丰收的果实！</p>
+<p>我曾用清华大学的校训“自强不息，厚德载物”为题，要学生写文章。发现学生虽能从正面理解“自强不息”之意，然对其深厚的意蕴却是不甚了了的；至于“厚德载物”，绝大多数人更是字面意思亦不能了然，对此我觉得非常遗憾。</p>
+<p>我曾对人说，我国学校校训之最佳者，当推清华大学的校训，因为它表述的是传统文化的精萃。“自强不息”，出于《易·乾象》：“天行健，君子以自强不息。”天上的日月星辰在不断运行，这就是“天行健”的意思。君子效法天，要像天那样不断运行，不断努力。“厚德载物”，见《易·坤》：“地势坤，君子以厚德载物”。土地的地势就是厚广，可以承载万物，君子取法地，要积累道德，方能承担事业。</p>
+<p>所以，自强不息，厚德载物，是要人们效法天地，在学、行各方面不断去努力。传统文化强调“天人合一”，人源于天地，是天地的派生物，所以天地之道就是人生之道。古代不少学者，能深刻体认这种精神并自觉加以践履，如孔子，自述“发愤忘食，乐而忘忧，不知老之将至”。孔子有一次在河边对学生们说：“逝者如斯夫，不舍昼夜。”就是激励他们效法自然，珍惜时光，努力进取。</p>
+<p>明末顾炎武有诗云：苍龙日暮还行雨，老树春深更著花。他认为“有一日未死之身，则有一日未闻之道”。王夫之于垂暮之年，疾病卧床，犹克服各种无法想象的困难，勤奋著书。《姜斋公行述》说他：“迄于暮年，体羸多病，腕不胜砚，指不胜笔，犹时置楮墨于卧榻之旁，力疾而篡注。”他们所体现的，都是这种精神。这种精神由于人们的践履，使我们后人仍时时感受到它那幽杳的理性与璀璨的美。传统文化中富含极有价值的东西是绝无疑义的，对这一点，人们口头上似也都能道，然我总觉得等闲视之或视而不见者仍滔滔皆是。如此优秀的自家珍藏不知宝爱教人不可思议，近来读到一条注释尤让我叹息不已。《朱子语类》载朱子语曰：“试思人以眇然之身，可以赞天地之化育；以常人而可以为圣贤……。”某大学出版社出版之《朱子语类选注》注“赞”字为“称颂，赞美”，真是大错特错。这里的“赞”，应解为“助”，人可以助天地之化育，是儒家所乐道的，这也是传统文化的一种常识。注释者的无知令人吃惊。同书又注禅家话头“云在青天水在瓶”云：“要考查行为的结果，考虑到行事的困难。”更是胡说八道。如果敢于注释古书的人如此不学浅陋，对传统文化如此隔膜无知，则前面说到的我的学生们不知“自强不息”“厚德载物”的出处与意蕴，也就不足为奇了。可见传统文化的精髓与人们已疏离到何等程度。</p>
+<p>“上善若水，厚德载物”，意思是说多做好事，善事日积月累就象滴水汇成江河湖海而升华为高尚的品德，具有高尚品德的人就会受到人们的拥戴，恪守道德准则的团体就会与时俱进，健康发展。笔者认为具有五千年文明历史的中华民族之所以虽历尽沧桑却一脉相承依然屹立在世界东方，是一代代龙的传人上下求索扬善弃恶的必然结果。孟子的“老吾老以及人之老，幼吾幼以及人之幼”，孔子的“仁义礼智信温良恭俭让”，毛泽东的“为人民服务”，都无不劝诫提倡人们从善。从这个角度说，中华民族的发展史就是一部追求“善”的历史。所谓“善”就是“好”，“善事”就是遵循大多数人认可并遵守的行为准则或游戏规则所做的“好事”。</p>
+<p>最后我以“勿以善小而不为， 勿以恶小而为之”与各位兴业同仁共勉，愿我们为荣誉、为国家多做“善事”，积“小善”为“厚德”。</p>
+<p>“天道酬勤,厚德载物”，伟大的成功和辛勤的劳动是成正比的，而增厚美德以容载万物则应该成为我们崇高不变的追求。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2019/10/21/【转】“天道酬勤，厚德载物”说略/" data-id="ck1za27u200041wvzzjxwv9v8" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-【转】程序员每天该做的事" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/10/21/【转】程序员每天该做的事/" class="article-date">
+  <time datetime="2019-10-20T17:38:35.279Z" itemprop="datePublished">2019-10-21</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>@2009-11-11 22:43:32</p>
+<pre><code>1、总结自己一天任务的完成情况
+</code></pre><p>最好的方式是写工作日志，把自己今天完成了什么事情，遇见了什么问题都记录下来，日后翻看好处多多</p>
+<p>2、考虑自己明天应该做的主要工作</p>
+<p>把明天要做的事情列出来，并按照优先级排列，第二天应该把自己效率最高的时间分配给最重要的工作</p>
+<p>3、考虑自己一天工作中失误的地方，并想出避免下一次再犯的方法 !</p>
+<p>出错不要紧，最重要的是不要重复犯相同的错误，那是愚蠢 ;</p>
+<p>4、考虑自己一天工作完成的质量和效率能否还能提高</p>
+<p>一天只提高1%，365天你的效率就能提高多少倍你知道吗？ (1+0.01)^365 = 37 倍</p>
+<p>5、看一个有用的新闻网站或读一张有用的报纸，了解业界动态</p>
+<p>闭门造车是不行的，了解一下别人都在做什么，对自己能带来很多启示</p>
+<p>6、记住一位同事的名字及其特点</p>
+<p>你认识公司的所有同事吗？你了解他们吗？</p>
+<p>7、清理自己的代码</p>
+<p>今天完成的代码，把中间的调试信息，测试代码清理掉，按照编码风格整理好，注释都写好了吗？</p>
+<p>8、清理自己的桌面</p>
+<p>当日事当日毕，保持清洁干劲的桌面才能让你工作时不分心，程序员特别要把电脑的桌面清理干净</p>
+<p>程序员每周该做的事</p>
+<p>1、向你的老板汇报一次工作</p>
+<p>让你的老板知道你在做什么，这很重要。可以口头、书面、邮件，看你老板的工作方式</p>
+<p>2、进行一次自我总结（非正式）</p>
+<p>这周之内自己表现得怎么样？该加分还是扣分？</p>
+<p>3、制定下周计划</p>
+<p>把下周要做的事情列出来，一样要分清楚优先级</p>
+<p>4、整理自己的文件夹、书柜和电脑文件</p>
+<p>5把桌面以外的地方也要清理干净，电脑的文件夹，收到的邮件，把过时的垃圾全部清理掉</p>
+<p>5、与一个非公司的朋友沟通</p>
+<p>它山之石，可以攻玉</p>
+<p>6、看一本杂志</p>
+<p>找一本适合自己的专业杂志</p>
+<p>7、纠正自己或同事一个细节上的不正确做法</p>
+<p>《细节决定成败》看过了吗？没看过强烈建议先看看程序员每月该做的事</p>
+<p>8、与父母团聚一次</p>
+<p>常回家看看，常回家看看</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2019/10/21/【转】程序员每天该做的事/" data-id="ck1za27u300051wvznvbuv49a" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-悼钱学森" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/10/21/悼钱学森/" class="article-date">
+  <time datetime="2019-10-20T17:37:51.258Z" itemprop="datePublished">2019-10-21</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>@2009-11-05 21:04:23<br><a href="http://news.sina.com.cn/z/qianxueshengshishi/index.shtml" target="_blank" rel="noopener">http://news.sina.com.cn/z/qianxueshengshishi/index.shtml</a></p>
+<p>10月31号上午，中国伟大的科学家钱学森在北京逝世，这里引用一位网友的诗以悼之。</p>
+<p>钱学森（1911年12月11日－-2009年10月31日）浙江省杭州市人，中国空气动力学家，中国科学院、中国工程院院士。曾任美国麻省理工学院教授、加州理工学院教授、加州理工学院喷气推进实验室创始人之一。钱学森是中国火箭、导弹及航天技术发展的主要奠基人，两弹一星功勋奖章获得者之一。</p>
+<pre><code>       悼钱学森
+
+燕喃轩人
+</code></pre><p>钱姓不爱钱，学成报梓桑。</p>
+<p>森严囚禁网，中断是美妄。</p>
+<p>华夏开新篇，民安要国防。</p>
+<p>族人同欢庆，的卢翱太苍。</p>
+<p>骄与民同列，傲乃信思想。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2019/10/21/悼钱学森/" data-id="ck1za27u700071wvzryeh4xwg" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-消逝的人物（2009）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/10/21/消逝的人物（2009）/" class="article-date">
+  <time datetime="2019-10-20T17:37:15.244Z" itemprop="datePublished">2019-10-21</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>@2009-11-05 20:36:40<br>1月22日——梁羽生，武侠小说大师(85岁) </p>
+<pre><code> 一代武侠小说大师梁羽生因病在悉尼去世，享年85岁。梁羽生原名陈文统，1924年3月22日生于广西蒙山一个书香门第，被誉为新派武侠小说的开山祖师，其代表作有《白发魔女传》、《七剑下天山》、《萍踪侠影录》等。
+对武侠小说略有耳闻的人大多知道这位大师级的人物, 当时梁羽生, 古龙，金庸三大高手并驾齐驱,各具特色, 开创新武侠小说先河 从造诣上讲梁还是前辈, 他的作品里深得旧武侠小说遗风, 虽小说内容有过正过邪之嫌, 情节构造不如金庸想象力丰富, 但其文学功底可以说是在武侠小说界首屈一指, 他的几乎任何小说里都充满了大量诗词赋歌赋, 文字其其优美。白发魔女的悲情、七剑下天山的荡荡情怀、萍踪侠影的爱恨情仇，让我们进入了一个如梦似幻的武侠世界。有他的小说改编的电影已成为经典之作。
+</code></pre><p>——飘萍倦侣,算茫茫人海,友朋知否? 剑匣诗囊长作伴,踏破晚风朝露,长啸穿云,高歌散雾,孤雁来还去!盟鸥社燕,雪泥鸿爪无据。 </p>
+<p>3月16日——林耀基，音乐教育家（72岁）</p>
+<pre><code>   小提琴教育家中的教父级人物, 1954年至1960年在中央音乐学院随马思聪学习小提琴。1960年毕业于中央音乐学院,后赴苏联莫斯科柴科夫斯基音乐学院深造，师从小提琴家杨柯列维奇(yankelevich)，专攻小提琴演奏与教学法。柯列维奇曾预言，林耀基将会为中国的小提琴教育事业做出巨大贡献。
+
+  林耀基在40年的执教生涯中博采众长，实践总结出一套深入浅出的教学方法。与其同事多年的央音教授梁大南在感叹林老师“高尚品德”的同时，对其特殊的教学法也赞叹有加：“他能最大限度地调动学生激情，挖掘其潜能，给予准确定位。特别是他能把自己所总结的教学方法变成打油诗一样通俗易懂，就算外行听了也感兴趣。”林耀基经常让学生体会“弦外”之音，形象地与他们一起想象音乐中的画面情境,让弓子“滑翔”,督促有小动作的学生去掉音乐中的“多余脂肪”。
+
+虽然我并不懂得拉小提琴，但是大师仍值得我们尊敬和悼念。
+</code></pre><p>4月12日——闫怀礼，著名演员（73岁）</p>
+<pre><code>  《西游记》中沙僧扮演者闫怀礼因肺部感染在北京去世。享年73岁。
+
+《西游记》中的沙僧扮演者，儿时的记忆是不会忘的，最遗憾的是他没有等到“二师兄”的临别一眼。。。
+</code></pre><p>以前的演员给我的感觉是他们才是真正的艺术家，不想现在的那些所谓的大牌和明星。他们对于艺术追求让我们肃然起敬。《西游记》是一部不朽的经典，至少在我们这一个人眼中，是没有任何版本能和它相媲美的。它伴我们度过了儿童年代，我都记不清一共看过多少次了。想想眼前就可以浮现出孙悟空的机智和大圣形象，猪八戒的懒散和好色形象，沙僧的任劳任怨的形象，白龙马的俊俏以及唐僧的慈悲形象，还记得每每唐僧介绍时都是“我们来自东土大唐，前往西天取经，这是我的三个徒儿”的台词。</p>
+<p>5月9日一一李文华，著名相声表演艺术家（82岁）</p>
+<pre><code>相声界的一位老前辈了，擅长捧艮，他们那个年代说的茶馆式加长袍相声，是需要细细品位的，怀念他和姜昆的那段《想入非非》。又是一位著名的艺术家来我们远去了。
+</code></pre><p>6月5日——罗京，央视主持人（48岁）</p>
+<p>（著名播音员罗京因淋巴癌于2009年6月5日病逝）</p>
+<p>   自从有记忆开始，我就习惯了新闻联播中的他和邢质彬，庄重，沉稳，大气就是他的风格，他的去世带走了一个时代的记忆。</p>
+<p>7月11日——季羡林，著名学者、国学大师（98岁）</p>
+<p>   虽然不是很熟悉，但是一直知道这个名字，知道有这样的一位国学大师，能够称为国学大师的人越来越少了，五四新文化时期的名人大多学贯中西，李大钊，胡适，蔡元培，梁实秋，陈寅恪，钱钟书，林语堂，梁漱溟很多很多，这样的人物现在越来越少，当今的社会环境，教育环境也容不得这样的人出世，可叹啊。。。</p>
+<p>真正有名的国学大师几乎都没有了，你要说什么经济学家，保证会有N人抢着答话，但是真正算是个国学大师的去没几个人敢承认。过度重视经济，冷淡了其他的文化艺术的发展。国学作为我们的文化，应该得到广泛的发扬和学习。</p>
+<p>10月13日——吕正操逝世（106）</p>
+<pre><code>开国上将吕正操于2009年10月13日逝世，享年106岁。吕正操，辽宁海城人，1955年被授予上将军衔。他是开过上将里面最后一个去世的。随着他的去世，那些开国元勋们也都随着时间消逝了。
+</code></pre><p>10月29号——贝时璋院士逝世（107）</p>
+<p>贝时璋院士２００９年１０月２９日上午在北京逝世，享年１０７岁。</p>
+<p>贝时璋（Shitsan Pai，1903.10.10[1]～2009.10.29）实验生物学家，细胞生物学家，教育家。我国细胞学、胚胎学的创始人之一，我国生物物理学的奠基人。早年从事无脊椎动物实验胚胎学和细胞学的研究，对细胞数恒定动物与再生的关系作了深入的研究；30年代初发现了中间性丰年虫，并观察到其雌雄生殖细胞的相互转化现象；70年代提出了细胞重建学说。重视交叉学科，致力于我国生物物理学的发展，先后组织开拓了放射生物学、宇宙生物学、仿生学、生物工程技术、生物控制论等分支领域和相关技术，并培养出一批生物物理学骨干人才。</p>
+<p>10月31号——钱学森逝世（98）</p>
+<p> 2009年10月31日上午8时06分，中国航天之父、享誉海内外的杰出科学家钱学森因病逝世，享年98岁。据钱学森之子钱永刚透露，连日来，在钱老常年居住的家内设置的灵堂每天都有上千人前来吊唁，用来摆放花圈花篮的帐篷只一天半就被放满。</p>
+<p>人类航天科技的重要开创者和主要奠基人之一，是工程控制论的创始人，是二十世纪应用科学领域最为杰出的科学家，是为新中国的成长做出无可估量贡献的老一辈科学家团体中影响最大和功勋最为卓著的人民科学家，是新中国爱国留学归国人员中最具代表性的国家建设者，是新中国历史上最伟大的科学家，被誉为“中国航天之父”、“中国导弹之父”、“火箭之王”。他在上世纪40年代已经成为和其恩师冯·卡门并驾齐驱的航空和航天领域内的最为杰出的科学家，并以《工程控制论》的出版为标志在学术成就上实质性地超越了科学巨匠冯·卡门，成为上个世纪整个应用科学领域中最杰出的代表，成为二十世纪众多学科领域的科学群星中最为璀璨的极少数巨星之一。</p>
+<p>我记得小学的时候有一篇课文就是讲两弹一星：钱学森的，至今任记忆由新。当时还曾立下了将来当科学家的理想，不过后来就渐渐的淡忘后者是不远去想起了。当年看的一部电影《冲上九重天》我现在还记忆犹新，虽然故事比较简单，但是主人公的精神却对当时的我产生了深深地震撼。想起老一辈的科学家和革命家的远去，他们给我留下崇高的人格和孜孜不倦的追求。</p>
+<p>随着老一辈的大师们的去世，留给我们的是永恒的怀恋和崇高的敬意。他们为自己的行业贡献了一生的力量，数十年如一日的研究工作让我们肃然起敬，值得我们称他们为大师。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2019/10/21/消逝的人物（2009）/" data-id="ck1za27ua000a1wvzglsxfw3o" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-感想若干" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/10/21/感想若干/" class="article-date">
+  <time datetime="2019-10-20T17:36:06.717Z" itemprop="datePublished">2019-10-21</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>@2009-11-04 17:49:52<br>天看到一个帖子，版主写出了自己人为的c++学习的步骤，给我的感想很大。最近想认真的学习一下c++方面的知识，但是真正在学的时候才发现c++很东西很多，知识很散，我找不到一个有效的学习过程。进过一段时间的学习，也只是会用几个控件和添加一些基本的代码，而对c++本质的东西还是一塌糊涂。看了这个帖子，我认识到最近的学习其实是在做简单的工作，而没有真正接触到本质。因此我觉得应该认真详细的计划一下今后的学习过程。</p>
+<pre><code>该帖子中c++的学习过程：
+</code></pre><p>1、可以考虑先学习C.</p>
+<p>2、开始学习C++</p>
+<p>3、学习应用开发</p>
+<p>4、学习MFC</p>
+<p>5、Win32API</p>
+<p>6、回到MFC</p>
+<p>7、COM</p>
+<p>COM就是一种远程过程调用，即你请求的代码是在另外一个进程中运行的，通过某种通信协议来回传递参数和结果。</p>
+<p>它认为c++是最基本的知识，mfc、atl之类都是c++的类的封装。</p>
+<p>在另一个关于c、c++牛人多牛人的帖子中，版主指出c、c++没有给程序开发者提供现成的调用，很多时候的靠自己去写，因此强迫c程序员去了解更多c之外的知识，总之就是c程序员付出了更多的努力，才会更牛b。</p>
+<p>这不禁让我产生了反思。最近和朋友在闲聊时，他提及一个编程很强的人时说的话深深的震撼了我，他说‘他很呆，所以话更多的时间去学习，也因为这样，他才能静下心来学习’。这句话任我很尴尬。自从上了大学有多久没有为了一个问题而废寝忘食过了；有多久没有认认真真的做事了；有多久没有让自己耐心下来了。每次学习都蜻蜓点水，点到即止；总是为做不好找理由，认为自己不够聪明；总是认为自己不该努力学习，怕苦怕累；从来没有为了学一个东西走路时还看书。我一直引以为傲的能全身心突入一件事的能力不见了。</p>
+<p>俗话说：没有汗水，哪有成果。我想我该认认真真做事了，而不是每次做事都半途而废，都无疾而终。突然发现大学四年浪费了多少时间，也许只有为了看一部小说时才会兴奋到可以一晚上都不睡觉，而第二天依然可以继续的地步了。原来不是我不行，东西太难，而是我还没有开始就已经放弃了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2019/10/21/感想若干/" data-id="ck1za27u800081wvz84gcgc48" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Catalan数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/10/21/Catalan数/" class="article-date">
+  <time datetime="2019-10-20T17:34:22.661Z" itemprop="datePublished">2019-10-21</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>@2009-10-22 19:20:54<br> 今天看到这个很有意思的数，在这里记录一下（摘自百度知道）。</p>
+<p>中文:卡特兰数</p>
+<p>原理：</p>
+<p>　　令h(1)＝1,catalan数满足递归式：</p>
+<p>　　h(n)= h(1)<em>h(n-1) + h(2)</em>h(n-2) + … + h(n-1)h(1) (其中n&gt;=2)</p>
+<p>　　另类递归式：</p>
+<p>　　h(n)=((4<em>n-6)/(n))</em>h(n-1);</p>
+<p>　　该递推关系的解为：</p>
+<p>　　h(n)=C(2n,n)/(n + 1) (n=1,2,3,…)</p>
+<p>典型的四类应用</p>
+<p>1.括号化问题</p>
+<p>　　矩阵链乘： P=a1×a2×a3×……×an，依据乘法结合律，不改变其顺序，只用括号表示成对的乘积，试问有几种括号化的方案？(h(n)种)</p>
+<p>2.出栈次序问题（经典问题，在计算机程序设计艺术里面有涉及）</p>
+<p>　　一个栈(无穷大)的进栈序列为1,2,3,..n,有多少个不同的出栈序列?</p>
+<p>　　类似：有2n个人排成一行进入剧场。入场费5元。其中只有n个人有一张5元钞票，另外n人只有10元钞票，剧院无其它钞票，问有多少中方法使得只要有10元的人买票，售票处就有5元的钞票找零？(将持5元者到达视作将5元入栈，持10元者到达视作使栈中某5元出栈)</p>
+<p>3.将多边行划分为三角形问题</p>
+<p>　　将一个凸多边形区域分成三角形区域的方法数?</p>
+<p>　　类似：一位大城市的律师在她住所以北n个街区和以东n个街区处工作。每天她走2n个街区去上班。如果她</p>
+<p>　　从不穿越（但可以碰到）从家到办公室的对角线，那么有多少条可能的道路？</p>
+<p>　　类似：在圆上选择2n个点,将这些点成对连接起来使得所得到的n条线段不相交的方法数?</p>
+<p>4.给顶节点组成二叉树的问题</p>
+<p>　　给定N个节点，能构成多少种形状不同的二叉树？</p>
+<p>　　(一定是二叉树!</p>
+<p>　　先去一个点作为顶点,然后左边依次可以取0至N-1个相对应的,右边是N-1到0个,两两配对相乘,就是h(0)<em>h(n-1) + h(2)</em>h(n-2) + … + h(n-1)h(0)=h(n))</p>
+<p>　　（能构成h（N）个）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2019/10/21/Catalan数/" data-id="ck1za27tx00021wvzqbfd1qyj" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Demon de Laplace" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/10/21/Demon de Laplace/" class="article-date">
+  <time datetime="2019-10-20T17:32:42.543Z" itemprop="datePublished">2019-10-21</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>@2009-10-22 11:05:27<br>最近看到这个词，突然对它很感兴趣，找到了它的意义，如下：</p>
+<p>维普百科</p>
+<p>拉普拉斯妖（Démon de Laplace）是由法国数学家皮埃尔-西蒙·拉普拉斯于1814年提出的一种科学假设。此“恶魔”知道宇宙中每个原子确切的位置和动量，能够使用牛顿定律来展现宇宙事件的整个过程，过去以及未来。</p>
+<pre><code>有人将它翻译成拉普拉斯之魔，demon一次在英文中是恶魔的意思。但是我更喜欢将它翻译成妖。拉普拉斯的这种科学假设是将一种规律当人一个生物，认为宇宙的整个过程都可以确定，而这种生物就是被假定具有这种能力的东西，这里我们是在不知道该如何称呼它。但因为一般认为恶魔是邪恶的代名词，因此我不喜欢用恶魔一词，因为这种生物并没有被设定为具有人类所定义的邪恶的一面，它具有一种按照规律来进行的，它的核心就是一个准则。而在中文中妖一般是指反常的东西，非常人所了解即为妖，人们不了解和超出人们的理解范围和能力范围就为妖。因此翻译成妖更贴切。
+
+第一次看到这个词的时候，我感到很兴奋。应为这个词代表的是一种万物皆可知和推知的认识。虽然现在的概率论否定了它的存在，但是任何规律都只能和一个阶段相适应，任何规律都不可能永远是适用的，总会出现另外的情况，但是只要存在过，作为人类曾今一个极度自信的说“我了解了整个宇宙”，它是人类探索史的一个丰碑。
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2019/10/21/Demon de Laplace/" data-id="ck1za27tz00031wvz4q0wapqp" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-周末遐想" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2019/10/21/周末遐想/" class="article-date">
+  <time datetime="2019-10-20T17:31:55.049Z" itemprop="datePublished">2019-10-21</time>
+</h3>
+    
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>每逢周末，就什么也不想去做，只是茫然地想到什么就干什么，生活就变得懒散和无目的。仿佛把平时的压抑和焦虑扔到一边。仿佛自己就再也不用考虑任何东西，仿佛自己就如同站在这个世界的外面一样。有时，也会在夜深人静时，静静地看着窗外，看着这个繁华和忙碌的世界他的夜晚的模样，这是就会想到家乡以前的夜晚。每到天黑时，周外一切都暗了下来，只有了每家中的点点灯光不小心泄露出来。有时会一家人在屋外乘凉，这是就有了很多关于天空星星的传说和以前先人的往事，都是一些世代相传的故事，一代一代的传了下来。</p>
+<pre><code>  随着年龄的增大，人也就变得不一样了。一样不是常说我们80后咋样咋样的吗，现在的主流以变成了90/00后了，这是社会对一个群体的思维和行为方式的承认。
+
+写着写着就没心情了，就和以前作文一样，写了一段就感觉无话可写了，就到这把。
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2019/10/21/周末遐想/" data-id="ck1za27u500061wvzi5e9w76e" class="article-share-link">Share</a>
         
       </div>
     </footer>
@@ -133,6 +582,10 @@
 
   
   
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
+  
 </section>
       
       <aside id="sidebar">
@@ -144,7 +597,23 @@
       <ul>
         
           <li>
-            <a href="/2018/03/04/hello-world/">Hello World</a>
+            <a href="/2019/10/21/Android Studio体验/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/21/月明/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/21/【转】“天道酬勤，厚德载物”说略/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/21/【转】程序员每天该做的事/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/21/悼钱学森/">(no title)</a>
           </li>
         
       </ul>
@@ -158,7 +627,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -170,7 +639,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2018 Loongway<br>
+      &copy; 2019 Loongway<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
       .
       Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
